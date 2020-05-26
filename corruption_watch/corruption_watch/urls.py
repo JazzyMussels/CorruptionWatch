@@ -15,8 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include 
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from profile_page import views as prof_views
+from selection import views as selection_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('profile/', prof_views.profile_view, name='profile_detail'),
+    path('selection/', selection_views.display_list, name='list'),
     path('', include('home_page.urls'))
 ]
+
+
+urlpatterns += staticfiles_urlpatterns()
+
