@@ -1,0 +1,85 @@
+{% extends 'home_page/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="bg-light">
+    <div class="container py-5">
+      <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6">
+          <h1 class="display-4">The pupose of this site is simple:</h1>
+          <p class="lead text-muted mb-0 text-center">We're on a dangerous downslide. The United States once 
+                                          enjoyed the reputation of being a place where the rule of law was strong. Increasingly,
+                                          we're a country where the wealthy and well connected succeed at the expense 
+                                          of the working class, using and abusing a fractured legal system to escape justice. 
+                                          This space exists to name names. It's important to have this information in a concise
+                                          location to better analyze trends. You can quickly locate an elected official and 
+                                          see any allegations of corruption that have been levied against them. </p>                            
+        </div>
+        <div class="col-lg-6 d-none d-lg-block"><img src="{% static 'images/cartoon.jpg'%}" alt="" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-white py-5">
+    <div class="container py-5">
+        <h1 class="display-4 text-center">This site uses three sources</h1>
+        <p class="lead text-muted mb-0 text-center">It's impossible to find unbiased sources. It's difficult to
+                                                    even minimize bias. Many people belive these sites at
+                                                    least make an honest attempt, so they've been chosen.
+        </p>
+        <br>
+        <div class="col-md-13">
+            <div class="card-columns">
+            <div class="card" style="width:360">
+                <img class="card-img-top" src="{% static 'images/wsj.jpeg' %}" alt="Wall Street Journal Logo">
+                <div class="card-body">
+                  <h4 class="card-title text-center"><a href="https://www.wsj.com/" class="btn btn-primary d-flex justify-content-center">Visit Site</a></h4>   
+                </div>
+              </div>
+              <div class="card" style="width:360">
+                <img class="card-img-top" src="{% static 'images/politico.jpg' %}" alt="Politico Logo">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="https://www.politico.com/" class="btn btn-primary d-flex justify-content-center">Visit Site</a></h4>
+                  
+                </div>
+              </div>
+              <div class="card" style="width:360">
+                <img class="card-img-top" src="{% static 'images/reuters.png' %}" alt="Reuters Logo">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="https://www.reuters.com/" class="btn btn-primary d-flex justify-content-center">Visit Site</a></h4>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="bg-light">
+    <div class="container py-5">
+      <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6 d-none d-lg-block"><img src="{% static 'images/me.jpg'%}" alt="" class="img-fluid"></div>
+        <div class="col-lg-6">
+          <h1 class="display-4">A little about me:</h1>
+          <p class="lead text-muted mb-0 text-center"> My personal reasons for investing my time in this project are varied. 
+                                                       I'm a software engineer, and this is the by-product of a few weeks spent
+                                                       learning the basics of the web framework Django. I have a strong interest
+                                                       in using data to bring about positive social change, and this is a step
+                                                       in that direction. </p>
+                                                       <br>
+                                                    <p class="lead text-muted mb-0 text-center">I also have a degree in political science and come partly from a background of 
+                                                        working for various non-profits, political campaigns, and protest movements.
+                                                        This material is something I care deeply about. People who abuse their positions
+                                                        of status must be exposed and removed from power. If even one person reads this 
+                                                        and decides to become involved or more engaged in our political process, then
+                                                        this has been time well spent.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+      </div>
+    </div>
+  </div>
+{%endblock%}

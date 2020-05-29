@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Select A Rep</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-
+{% extends 'home_page/base.html' %}
+{% load static %}
+{% block content %}
+<br>
 <div class="container">
-  <h2>Database Of Officials</h2>
+    <h1>Database Of Officials</h1>
+        <div class="row">
+            <form class="col-md-4">
+                <label>Search or select a category</label>
+                <select class="form-control select2">
+                   <option>Select</option> 
+                   <option>Governors</option> 
+                   <option>Senators</option> 
+                   <option>Representatives</option> 
+                   <option>Judges</option> 
+                   <option>Unelected Officials</option> 
+                </select>
+            </form>
+         </div>
+    <script>
+        $('.select2').select2();
+    </script>
+      <br>
   <p>Click on a member below to see details</p>            
   <table class="table table-hover">
     <thead>
@@ -31,6 +39,4 @@
     </tbody>
   </table>
 </div>
-
-</body>
-</html>
+{% endblock %}

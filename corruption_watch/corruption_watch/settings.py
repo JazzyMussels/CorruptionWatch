@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'home_page.apps.HomePageConfig',
     'profile_page.apps.ProfilePageConfig',
     'selection.apps.SelectionConfig',
+    'contact.apps.ContactConfig',
+    'about.apps.AboutConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

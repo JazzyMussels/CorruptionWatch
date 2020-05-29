@@ -20,11 +20,15 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from profile_page import views as prof_views
 from selection import views as selection_views
+from contact import views as contact_views 
+from about import views as about_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('profile/', prof_views.profile_view, name='profile_detail'),
+    path('about/', about_views.about, name='about'),
     path('selection/', selection_views.display_list, name='list'),
+    path('contact/', contact_views.contact, name='contact'),
     path('', include('home_page.urls'))
 ]
 
